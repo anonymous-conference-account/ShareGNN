@@ -1,0 +1,18 @@
+- { layer_type: wl, wl_iterations: 2, max_node_labels: 500, properties: { name: edge_label_distances, values: [1] }}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [1] }}
+- { layer_type: simple_cycles, max_cycle_length: 50, properties: { name: edge_label_distances, values: [1] }}
+- { layer_type: wl, wl_iterations: 2, max_node_labels: 500, properties: { name: edge_label_distances, values: [1,2] }}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [1,2] }}
+- { layer_type: simple_cycles, max_cycle_length: 50, properties: { name: edge_label_distances, values: [1,2] }}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [1,2,3]}}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [3,4,5]}}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [4,5,6]}}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [7,8,9]}}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [10,11,12]}}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [6,7,8,9,10]}}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [1,2,3,4,5,6]}}
+- { layer_type: simple_cycles, max_cycle_length: 6, properties: { name: edge_label_distances, values: [1,2,3,4,5,6]}}
+- { layer_type: simple_cycles, max_cycle_length: 8, properties: { name: edge_label_distances, values: [1,2,3,4,5,6]}}
+- { layer_type: wl, wl_iterations: 2, max_node_labels: 100, properties: { name: edge_label_distances, values: [1,2,3,4,5,6]}}
+- { layer_type: wl, wl_iterations: 1, max_node_labels: 100, properties: { name: edge_label_distances, values: [1,2,3,4,5,6]}}
+- { layer_type: primary, properties: { name: edge_label_distances, values: [1,2,3,4,5,6,7,8,9,10]}}

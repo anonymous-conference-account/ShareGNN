@@ -1,0 +1,20 @@
+- { layer_type: wl, wl_iterations: 0 }
+- { layer_type: wl, wl_iterations: 1, max_node_labels: 50000 }
+- { layer_type: wl, wl_iterations: 2, max_node_labels: 50000 }
+- { layer_type: subgraph, id: 0 }
+- { layer_type: subgraph, id: 1 }
+- { layer_type: subgraph, id: 2 }
+- { layer_type: subgraph, id: 3 }
+- { layer_type: simple_cycles, max_cycle_length: 3 }
+- { layer_type: simple_cycles, max_cycle_length: 4 }
+- { layer_type: simple_cycles, max_cycle_length: 5 }
+- { layer_type: induced_cycles, max_cycle_length: 4 }
+- { layer_type: induced_cycles, max_cycle_length: 5 }
+- { layer_type: induced_cycles, max_cycle_length: 10 }
+- { layer_type: induced_cycles, max_cycle_length: 20 }
+- { layer_type: cliques, max_clique_size: 3 }
+- { layer_type: cliques, max_clique_size: 4 }
+- { layer_type: cliques, max_clique_size: 6 }
+- { layer_type: cliques, max_clique_size: 10 }
+- { layer_type: cliques, max_clique_size: 20 }
+- { layer_type: cliques, max_clique_size: 50 }

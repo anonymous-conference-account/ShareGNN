@@ -1,0 +1,33 @@
+/src/Competitors/Results/
+/src/Competitors/GNN/Results/
+/src/Competitors/GNN/Datasets/
+*.idea
+/.idea/
+/tmp/
+/Testing/
+# ignore everything in the Data folder except the Splits folder
+/Data/*
+!/Data/Splits/
+!/Data/SplitsSimple/
+!/Data/GraphDatasets/
+# ignore everything in the Reproduce folder except for the Configs folder and .py files
+/Reproduce/*
+!/Reproduce/Configs/
+!Reproduce/*.py
+# ignore all results and data folders after Examples
+/Examples/*/Data/
+/Examples/*/Results/
+/Examples/Data/
+/ReproduceExtended/Graphs/
+/ReproduceExtended/Labels/
+/ReproduceExtended/Properties/
+/ReproduceExtended/Splits/
+/ReproduceExtended/Data/
+/ReproduceExtended/Data/
+!Examples/TextClassification/Data/Graphs/sentiment_test/raw
+/Examples/TextClassification/Plots/
+/venv/
+/unit_tests/Synthetic/Data/
+/unit_tests/Synthetic/Results/
+/paper_experiments/Data/
+/paper_experiments/Results/

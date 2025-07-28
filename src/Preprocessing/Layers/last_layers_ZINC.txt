@@ -1,0 +1,6 @@
+- { layer_type: simple_cycles, max_cycle_length: 50 }
+- { layer_type: simple_cycles, max_cycle_length: 20 }
+- { layer_type: simple_cycles, max_cycle_length: 6 }
+- { layer_type: wl, wl_iterations: 2, max_node_labels: 500 }
+- { layer_type: wl, wl_iterations: 1, max_node_labels: 500 }
+- { layer_type: primary }

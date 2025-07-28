@@ -1,0 +1,22 @@
+- { layer_type: wl, wl_iterations: 0, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: wl, wl_iterations: 1, max_node_labels: 500, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: wl, wl_iterations: 2, max_node_labels: 500, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: subgraph, id: 0, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: subgraph, id: 1, properties: { name: distances, values: [ 1, 2 ] } }
+- { layer_type: subgraph, id: 2, properties: { name: distances, values: [ 1, 2 ] } }
+- { layer_type: subgraph, id: 3, properties: { name: distances, values: [ 1, 2 ] } }
+- { layer_type: simple_cycles, max_cycle_length: 3, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: simple_cycles, max_node_labels: 500, max_cycle_length: 4, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: simple_cycles, max_node_labels: 1000, max_cycle_length: 4, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: simple_cycles, max_node_labels: 500, max_cycle_length: 5, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: simple_cycles, max_node_labels: 1000, max_cycle_length: 5, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: induced_cycles, max_cycle_length: 4, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: induced_cycles, max_cycle_length: 5, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: induced_cycles, max_cycle_length: 10, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: induced_cycles, max_cycle_length: 20, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: cliques, max_clique_size: 3, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: cliques, max_clique_size: 4, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: cliques, max_clique_size: 6, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: cliques, max_clique_size: 10, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: cliques, max_clique_size: 20, properties: { name: distances, values: [ 1,2 ] } }
+- { layer_type: cliques, max_clique_size: 50, properties: { name: distances, values: [ 1,2 ] } }
