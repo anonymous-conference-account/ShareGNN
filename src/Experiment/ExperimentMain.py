@@ -512,12 +512,8 @@ class ExperimentMain:
             config_id = int(curr_path.name.split('_')[3])
             model_path = path_to_models.joinpath(f'model_Best_Configuration_{str(config_id).zfill(6)}_run_{run_id}_val_step_{validation_id}.pt')
         else:
-            if path_to_models.exists():
-                # get one file that contains the string 'model_Configuration' in the name
-                curr_path = next(path_to_models.glob('*model_Configuration*'))
-            else:
+            if not path_to_models.exists():
                 raise FileNotFoundError(f"Model directory {path_to_models} not found")
-            config_id = int(curr_path.name.split('_')[2])
             model_path = path_to_models.joinpath(f'model_Configuration_{str(config_id).zfill(6)}_run_{run_id}_val_step_{validation_id}.pt')
         run_config = run_configs[config_id]
         # check if the model exists

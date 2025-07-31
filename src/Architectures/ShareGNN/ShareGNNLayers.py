@@ -457,6 +457,7 @@ class InvariantBasedMessagePassingLayer(InvariantBasedLayer):
             target_labels = self.graph_data.node_labels[self.target_label_descriptions[i]].node_labels
             bias_labels = self.graph_data.node_labels[self.bias_label_descriptions[i]].node_labels
             for key in valid_property_values:
+                #print(f'Initialize head {i+1}/{len(self.layer.layer_heads)} with property {key}')
                 property_subdict = self.graph_data.properties[self.property_descriptions[i]].properties[key]
                 property_subdict_slices = self.graph_data.properties[self.property_descriptions[i]].properties_slices[key]
                 labeled_subdict = property_subdict.detach().clone()
