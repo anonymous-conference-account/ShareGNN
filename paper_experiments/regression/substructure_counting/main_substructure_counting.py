@@ -6,7 +6,7 @@ from src.Experiment.ExperimentMain import ExperimentMain
 
 def main_counting(num_threads=-1):
     experiment = ExperimentMain(Path('paper_experiments/regression/substructure_counting/configs/main_config_substructure_counting.yml'))
-    experiment.ExperimentPreprocessing(num_threads=num_threads)
+    experiment.ExperimentPreprocessing(num_threads=1)
     ## run real world experiment
     experiment.GridSearch(num_threads=num_threads)
     experiment.EvaluateResults()
