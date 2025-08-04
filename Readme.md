@@ -39,24 +39,24 @@ cd paper_experiments
 
 ### Substructure Counting
 ```bash
-chmod +x substructure_counting.sh & ./substructure_counting.sh
+chmod +x substructure_counting.sh && ./substructure_counting.sh
 ```
 ### Synthetic Datasets
 ```bash
-chmod +x synthetic.sh & ./synthetic.sh
+chmod +x synthetic.sh && ./synthetic.sh
 ```
 
 ### Real World Classification
 ```bash
-chmod +x TUDatasets.sh & ./TUDatasets.sh
+chmod +x TUDatasets.sh && ./TUDatasets.sh
 ```
 
 ### ZINC (12k and 250k)
 ```bash
-chmod +x ZINC.sh & ./ZINC.sh
+chmod +x ZINC.sh && ./ZINC.sh
 ```
 ```bash
-chmod +x ZINC_full.sh & ./ZINC_full.sh
+chmod +x ZINC_full.sh && ./ZINC_full.sh
 ```
 
 

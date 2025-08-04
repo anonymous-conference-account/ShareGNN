@@ -9,7 +9,6 @@ from src.Preprocessing.GraphData.GraphData import get_graph_data
 from src.utils.utils import save_graphs
 import networkx as nx
 
-
 def create_dataset(dataset_name, layers=None, with_degree=False):
     # load the graphs
     data_path = '../GraphData/DS_all/'

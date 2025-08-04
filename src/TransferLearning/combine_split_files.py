@@ -4,7 +4,6 @@ from src.Preprocessing.create_splits import splits_from_index_lists
 from src.utils.load_splits import Load_Splits
 from copy import deepcopy
 
-
 def pretraining_finetuning(split_paths, db_names, pretraining_ids, finetuning_ids, appendices=None, output_path=None):
     """
     Combine split files for pretraining. The function reads multiple split files, recomputes the graph ids based on the order of the files
