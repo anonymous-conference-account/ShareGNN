@@ -5,7 +5,7 @@ datasets:
       validation_folds: 1,
       with_splits: False,
       split_function: zinc_splits_full,
-      experiment_config_file: "paper_experiments/regression/ZINC/configs/network_ZINC.yml",
+      experiment_config_file: "paper_experiments/regression/ZINC/configs/network_ZINC_full.yml",
       type: 'ZINC',
   }
 
@@ -44,7 +44,7 @@ loss:
 # rule_occurrence_threshold: threshold for the rule occurrence, determines how often a rule has to be present to be used in the network
 # -type: [graph, total], graph: the rule has to be present in a graph, total: the rule has to be present in the whole dataset
 # -threshold: the threshold for the rule occurrence at least this many times
-rule_occurrence_threshold: 2
+rule_occurrence_threshold: 10
 
 # weight initialization: weight initialization for the network (TODO)
 # - convolution: weight initialization for the convolutional layers
@@ -68,7 +68,7 @@ batch_size:
 learning_rate:
   - 0.001
 epochs:
-  - 300
+  - 150
 
 early_stopping:
   enabled:

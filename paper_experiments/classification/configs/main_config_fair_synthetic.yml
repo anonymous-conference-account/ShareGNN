@@ -2,11 +2,13 @@ datasets:
  #  synthetic datasets
   - {name: "CSL",
      task: 'graph_classification',
+     with_splits: True,
      validation_folds: 5,
      experiment_config_file: "paper_experiments/classification/configs/config_CSL.yml",
      type: "gnn_benchmark"}
   - {name: "EvenOddRings2_16",
      task: 'graph_classification',
+     with_splits: True,
      validation_folds: 10,
      experiment_config_file: "paper_experiments/classification/configs/config_EvenOddRings.yml",
      type: "generate_from_function",
@@ -14,18 +16,21 @@ datasets:
      generate_function_args: {data_size: 1200, ring_size: 16, difficulty: 2, count: False, seed: 764}}
   - {name: "EvenOddRingsCount16",
      task: 'graph_classification',
+     with_splits: True,
      validation_folds: 10,
      experiment_config_file: "paper_experiments/classification/configs/config_EvenOddRingsCount.yml",
      type: "generate_from_function", generate_function: even_odd_rings,
      generate_function_args: {data_size: 1200, ring_size: 16, count: True, seed: 764}}
   - {name: "LongRings100",
      task: 'graph_classification',
+     with_splits: True,
      validation_folds: 10,
      experiment_config_file: "paper_experiments/classification/configs/config_LongRings.yml",
      type: "generate_from_function",
      generate_function: long_rings, generate_function_args: {data_size: 1200, ring_size: 100, seed: 764}}
   - {name: "Snowflakes",
      task: 'graph_classification',
+     with_splits: True,
      validation_folds: 10,
      experiment_config_file: "paper_experiments/classification/configs/config_Snowflakes.yml",
      type: "generate_from_function",
