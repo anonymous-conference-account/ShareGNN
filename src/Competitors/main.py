@@ -22,7 +22,6 @@ def validation(db_name, validation_id, graph_data):
                         validate_data=validate_data, test_data=test_data, seed=i)
         noG.Run()
 def main(db_name, data_path="../../BenchmarkGraphs/DS_all/"):
-    #datapath = "/home/mlai21/seiffart/BenchmarkGraphs/BenchmarkGraphs/DS_all/"
     # load the graph data
     graph_data = get_graph_data(db_name, data_path=data_path)
 
